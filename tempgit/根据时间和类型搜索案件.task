@@ -1,0 +1,5 @@
+Dim sRet
+TracePrint(phone)
+Mouse.Action(@ui"块级元素<div>","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Keyboard.InputText(@ui"输入控件<input>_1980-10-01","",true,20,10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 500, "bSetForeground": true, "sSimulate": "message", "bValidate": false, "bClickBeforeInput": false})
+sRet = UiElement.GetValue(@ui"获取搜索出的裁决书数",{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200})

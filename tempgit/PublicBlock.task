@@ -1,0 +1,10 @@
+Dim g_phone="",g_password=""
+Function user_login()
+
+TracePrint("————获取登录用户信息————")
+g_phone = "15258653761"
+g_password = "FHvHlHjbIpXt0ApGAgIbqg=="
+TracePrint(g_phone)
+
+TracePrint(g_password)
+End Function
