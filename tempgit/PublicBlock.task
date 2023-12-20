@@ -1,10 +1,10 @@
-Dim g_phone="",g_password=""
+Dim sRet,objDatabase
+Function mysql_connent()
+
+g_db = Database.CreateDB("MySQL",{"host": "127.0.0.1", "port": "3306", "user": "root","password": "9r0iKKr22/ey/48hS6FN/Q==","database": "jugment-rpa","charset": "utf8"})
+End Function
 Function user_login()
 
 TracePrint("————获取登录用户信息————")
-g_phone = "15258653761"
-g_password = "FHvHlHjbIpXt0ApGAgIbqg=="
-TracePrint(g_phone)
 
-TracePrint(g_password)
 End Function

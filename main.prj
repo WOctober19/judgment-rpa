@@ -77,8 +77,33 @@
     ],
     "variables": [
         {
-            "name": "qqqq",
-            "value": "\"qqqq\"",
+            "name": "g_phone",
+            "value": "\"15258653761\"",
+            "type": "none"
+        },
+        {
+            "name": "g_password",
+            "value": "\"FHvHlHjbIpXt0ApGAgIbqg==\"",
+            "type": "none"
+        },
+        {
+            "name": "g_begin_time",
+            "value": "\"1980-10-01\"",
+            "type": "none"
+        },
+        {
+            "name": "g_end_time",
+            "value": "\"1989-10-01\"",
+            "type": "none"
+        },
+        {
+            "name": "g_hWeb",
+            "value": "\"\"",
+            "type": "none"
+        },
+        {
+            "name": "g_db",
+            "value": "\"\"",
             "type": "none"
         }
     ],
@@ -130,7 +155,7 @@
                 },
                 {
                     "type": "border",
-                    "selected": 1,
+                    "selected": 0,
                     "size": 280,
                     "minSize": 280,
                     "location": "right",
@@ -177,7 +202,7 @@
                                     "id": "e1141790-9d57-11ee-a7b4-0fad5efb6752"
                                 },
                                 "enableClose": false,
-                                "className": "",
+                                "className": "flexlayout__tab_button_modify",
                                 "icon": "../../../assets/_/pages-next/home/childrens/main/assets/tab-flow.png"
                             },
                             {
@@ -210,6 +235,24 @@
                                     "type": "task",
                                     "selector": [
                                         "d449fec5-6829-43c9-96f9-4207afbe0dad"
+                                    ]
+                                },
+                                "enableClose": true,
+                                "className": "",
+                                "icon": "../../../assets/_/pages-next/home/childrens/main/assets/tab-task.png"
+                            },
+                            {
+                                "type": "tab",
+                                "id": "2a0cdc54-2ab1-41fb-a3ae-cbb92ae07ccf",
+                                "name": "全局变量",
+                                "helpText": "C:\\Users\\20831\\Desktop\\rpa\\judgment-rpa\\PublicBlock.task",
+                                "component": "taskNodeEditor",
+                                "config": {
+                                    "selfControl": true,
+                                    "id": "2a0cdc54-2ab1-41fb-a3ae-cbb92ae07ccf",
+                                    "type": "task",
+                                    "selector": [
+                                        "2a0cdc54-2ab1-41fb-a3ae-cbb92ae07ccf"
                                     ]
                                 },
                                 "enableClose": true,
@@ -256,8 +299,8 @@
     },
     "flowConfig": {
         "scrollbarPosition": {
-            "left": 1393.3333740234375,
-            "top": 1074
+            "left": 1393,
+            "top": 1274
         },
         "zoom": 0.85
     }

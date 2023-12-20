@@ -1,0 +1,9 @@
+[2023/12/19 15:04:08][INFO][][0] 工作路径已切换到 C:\Users\20831\Desktop\rpa\judgment-rpa\
+[2023/12/19 15:04:08][INFO][main.prj][0] 流程 main.prj 开始运行
+[2023/12/19 15:04:08][INFO][main.prj][0] 进入流程块“登录裁决网”
+[2023/12/19 15:04:19][INFO][main.prj][0] 进入流程块“根据时间和类型搜索案件”
+[2023/12/19 15:04:20][ERROR][search.task][4] 运行发生错误，流程中止
+错误信息如下：
+search.task 第4行：模块 Keyboard.KeyboardAuto.InputText 命令出错：调用的目标发生了异常。
+文本不能为空
+[2023/12/19 15:04:20][INFO][main.prj][0] C:\Users\20831\Desktop\rpa\judgment-rpa\main.prj 运行已结束

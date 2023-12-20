@@ -1,14 +1,29 @@
+Dim is_login=""
 PublicBlock.user_login()
 Dim hWeb,bRet,iRet,arrElement,sRet
-hWeb = WebBrowser.Create("chrome","https://wenshu.court.gov.cn/website/wenshu/181029CR4M5A62CH/index.html?",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"sBrowserPath":"","sStartArgs":""})
+g_hWeb = WebBrowser.Create("chrome","https://wenshu.court.gov.cn/website/wenshu/181029CR4M5A62CH/index.html?",30000,{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200,"sBrowserPath":"","sStartArgs":""})
 is_login = UiElement.GetValue(@ui"链接<a>_登录3",{"bContinueOnError":false,"iDelayAfter":300,"iDelayBefore":200})
 If is_login = "登录"
     
 Mouse.Action(@ui"链接<a>_登录1","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
-    Keyboard.InputText(@ui"输入控件<input>1","15258653761",true,20,10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 500, "bSetForeground": true, "sSimulate": "message", "bValidate": false, "bClickBeforeInput": false})
-    Keyboard.InputPwd(@ui"输入控件<input>2","FHvHlHjbIpXt0ApGAgIbqg==",true,20,10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 500, "bSetForeground": true, "sSimulate": "message", "bValidate": false, "bClickBeforeInput": false})
+    
+Keyboard.InputText(@ui"输入控件<input>1",g_phone,true,20,10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 500, "bSetForeground": true, "sSimulate": "message", "bValidate": false, "bClickBeforeInput": false})
+    Keyboard.InputPwd(@ui"输入控件<input>2",g_password,true,20,10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 500, "bSetForeground": true, "sSimulate": "message", "bValidate": false, "bClickBeforeInput": false})
     Mouse.Action(@ui"文本<span>_登录","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
-    Mouse.Action(@ui"链接<a>_刑事案件","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+    
+TracePrint("登录成功----------")
+Delay(1000)
+Mouse.Action(@ui"链接<a>_刑事案件","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Mouse.Action(@ui"文本<i>","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+
+
+
+Delay(1000)
     Else 
     Mouse.Action(@ui"链接<a>_刑事案件1","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+Mouse.Action(@ui"文本<i>","left","click",10000,{"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [],"sSimulate": "simulate", "bMoveSmoothly": false})
+
+TracePrint("已登录----------")
+
+Delay(1000)
     End If

@@ -1,0 +1,9 @@
+[2023/12/20 16:18:23][INFO][][0] 工作路径已切换到 C:\Users\20831\Desktop\rpa\judgment-rpa\
+[2023/12/20 16:18:23][INFO][main.prj][0] 流程 main.prj 开始运行
+[2023/12/20 16:18:23][INFO][main.prj][0] 进入流程块“登录裁决网”
+[2023/12/20 16:18:28][INFO][main.prj][0] 进入流程块“根据时间和类型搜索案件”
+[2023/12/20 16:18:36][ERROR][search.task][18] 运行发生错误，流程中止
+错误信息如下：
+search.task 第18行：模块 WebBrowserPlugin.UIRobotWebBrowser.GoURL 命令出错：调用的目标发生了异常。
+无效的 URI: 未能确定 URI 的格式。
+[2023/12/20 16:18:36][INFO][main.prj][0] C:\Users\20831\Desktop\rpa\judgment-rpa\main.prj 运行已结束
